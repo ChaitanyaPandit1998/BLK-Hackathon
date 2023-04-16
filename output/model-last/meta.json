@@ -21,7 +21,9 @@
 
     ],
     "ner":[
-      "Rates"
+      "BLK_COUNTRY",
+      "BLK_INT_RATE",
+      "BLK_ORG"
     ]
   },
   "pipeline":[
@@ -40,13 +42,23 @@
     "ents_p":1.0,
     "ents_r":1.0,
     "ents_per_type":{
-      "Rates":{
+      "BLK_ORG":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "BLK_COUNTRY":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "BLK_INT_RATE":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       }
     },
-    "tok2vec_loss":0.0000000003,
-    "ner_loss":0.0000000012
+    "tok2vec_loss":0.0000000239,
+    "ner_loss":0.0000000661
   }
 }
